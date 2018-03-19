@@ -1,0 +1,58 @@
+part1
+
+sudo取得授權執行
+
+apt-get update 取得更新版本
+
+apt-get install python3-pip 安裝python3
+
+version 取得版本號
+
+upgrade-pip 升級python
+
+mkdir 創建
+
+cd+資料夾名稱 進入該資料夾
+
+cd 返回
+
+install virtualenv 安裝虛擬環境
+
+virtualenv VENV 在虛擬環境內創建資料夾VENV
+
+source VENV/bin/activate 執行該目錄內指定程式
+
+install django 安裝django
+
+django-admin startproject mysite 將django裝到選擇的目錄中
+
+python manage.py runserver 啟動開發伺服器
+
+python manage.py startapp polls 在mysite裡面新增一個資料夾polls 新建app
+
+startapp 類似app
+
+ctrl+c終止當前程序
+
+ctrl+z類似中止程序，但似乎某些情況不合適
+
+python manage.py makemigrations 創建更改的文件
+
+python manage.py migrate 將生成的py文件應用到數據庫
+
+python manage.py shell 進入shell模式($變成>>>)
+
+from polls.models import Question, Choice 導入問題與選項
+
+Question.objects.all() 查看已存在的question
+
+q = Question(question_text="What's new?", pub_date=timezone.now() 導入問題 已經提問時間
+
+Question.objects.all() 顯示所有question
+
+q.was_published_recently() 確認question是否為最近創立
+
+q.choice_set.create(choice_text='xxx', votes=0) 建立choice
+
+python manage.py createsuperuser 創建帳號
+
